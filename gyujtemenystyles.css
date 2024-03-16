@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#gyujtemenyLista:empty {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.dropdown {
+  width: 85px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content button {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border: none;
+  background-color: #4CAF50; 
+  width: 89%;
+  text-align: center;
+}
+
+.dropdown-content button:hover {
+  background-color: #45a049;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+li {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #d4d4d4;
+  border-radius: 5px;
+}
+
+li button {
+  margin-left: 10px;
+}
+
+ul ul {
+  margin-left: 20px;
+}
+
+
+li span.cim {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+li span.temakor {
+  display: block;
+  font-size: 1.1em;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+li span.datum {
+  display: block;
+  font-size: 1.1em;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+li img {
+  display: block;
+  max-width: 100px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
