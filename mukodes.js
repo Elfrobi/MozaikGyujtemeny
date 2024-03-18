@@ -160,16 +160,19 @@ document.getElementById('create').addEventListener('click', function() {
             deleteAllButton.textContent = 'Elemek törlése';
             deleteAllButton.addEventListener('click', function() {
                 var checkboxes = gyujtemeny.getElementsByTagName('input');
+                var noCheckboxSelected = true;
                 for (var i = checkboxes.length - 1; i >= 0; i--) {
                     if (checkboxes[i].checked) {
+                        noCheckboxSelected = false;
                         var itemLi = checkboxes[i].parentNode;
                         var elemCim = itemLi.textContent.trim();
                         gyujtemeny.removeChild(itemLi);
                         delete elemek[elemCim];
                     }
-                    else{
-                        alert('Jelöld ki a törölni kívánt elemet!');
-                    }
+                }
+
+                if(noCheckboxSelected){
+                    alert('Jelöld ki a törölni kívánt elemet!');
                 }
 
                 // Ha már nincs elem a gyűjteményben, eltávolítjuk az "Elemek törlése" gombot
