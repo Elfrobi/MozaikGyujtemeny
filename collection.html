@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Új gyűjtemény létrehozása</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="collectionstyles.css">
+    <script src="function.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <button id="newCollection" class="btn btn-success m-2">Új gyűjtemény létrehozása</button>
+    <div id="collectionForm" class="m-2 p-2 bg-white rounded shadow-sm" style="display: none;">
+        <input type="text" id="title" class="form-control mb-2" placeholder="Cím">
+        <input type="text" id="topic" class="form-control mb-2" placeholder="Témakör">
+        <input type="date" id="date" class="form-control mb-2">
+        <input type="file" id="image" class="form-control mb-2">
+        <button id="create" class="btn btn-success">Létrehozás</button>
+    </div>
+    <ul id="collectionList" class="m-2 p-2 bg-white rounded shadow-sm"></ul>
+</body>
+</html>
